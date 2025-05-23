@@ -4,7 +4,7 @@ import streamlit as st
 
 movies = pickle.load(open('movie.pkl', mode='rb'))
 data = pd.DataFrame(movies)
-similarity = pd.DataFrame(pickle.load(open('similarities.pkl.gz', mode='rb')))
+similarity = pd.DataFrame(pickle.load(open('similarities_compressed.pkl.gz', mode='rb')))
 
 
 def recommend(movie):
